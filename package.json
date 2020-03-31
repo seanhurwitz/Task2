@@ -1,0 +1,19 @@
+{
+  "name": "second_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "dev": "env-cmd -f ./config/dev.env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
