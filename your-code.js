@@ -16,3 +16,17 @@ client
   .then(results => console.table(results.rows))
   .catch(e => console.log(e))
   .finally(() => client.end());
+
+/*General Notes
+
+???? What happened here?
+
+.connect() is not asynchronous, as per their docs.
+You used .then() which is cool, but what happened to async await?
+Good use of environment variable.
+Once again, this presumes the end user has access to a table called "users". See my code for how flexible yours needs to be
+
+Folder structure? Ease of use?
+And don't say it can't be done. NOTHING can't be done! Check my code.
+
+*/

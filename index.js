@@ -1,7 +1,7 @@
-require("dotenv").config();
-const { dissoc } = require("ramda");
-const pg = require("./utils");
-const { config, tables } = require("./config").postgres;
+require("dotenv").config(); //Easy to work with env files. search dotenv on google for docs.
+const { dissoc } = require("ramda"); //research what ramda does, particularly the dissoc function.
+const pg = require("./utils"); //All my methods in a nice folder
+const { config, tables } = require("./config").postgres; //Everything I need in a config file.
 
 const cockpit = async () => {
   await pg.createDatabase(dissoc("database", config), config.database);
@@ -23,3 +23,4 @@ const cockpit = async () => {
 };
 
 cockpit();
+//Just have to call this function and everything gets done.

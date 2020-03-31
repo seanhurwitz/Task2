@@ -6,3 +6,6 @@ const addRow = async (client, table, data) => {
 };
 
 module.exports = addRow;
+
+
+//SIMPLE CRUD stuff, I'm not bothering doing update read and delete.
